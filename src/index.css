@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-gray-800 bg-clay;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 md:py-24 px-6 md:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .leaf-vein {
+    position: relative;
+  }
+  
+  .leaf-vein::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2D5016, transparent);
+  }
+
+  .plant-tag {
+    @apply bg-white border-2 border-leaf/20 rounded-sm relative;
+    box-shadow: 0 2px 8px rgba(45, 80, 22, 0.08);
+  }
+  
+  .plant-tag::before {
+    content: '';
+    position: absolute;
+    top: 0.75rem;
+    left: 0;
+    width: 3px;
+    height: 2rem;
+    background: #E8930C;
+  }
+
+  /* Ken Burns Effect - Slow, cinematic zoom and pan */
+  @keyframes kenBurns {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+    50% {
+      transform: scale(1.08) translate(-2%, -1%);
+    }
+    100% {
+      transform: scale(1) translate(0, 0);
+    }
+  }
+
+  .animate-ken-burns {
+    animation: kenBurns 80s ease-in-out infinite alternate;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-ken-burns {
+      animation: none;
+      transform: scale(1.04);
+    }
+  }
+
+  /* Fade-in animation for expanded content */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.4s ease-out;
+  }
+}
