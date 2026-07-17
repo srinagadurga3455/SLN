@@ -13,18 +13,30 @@ const About = () => {
           
           <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
             <p>
-              <span className="font-bold text-leaf">Siva Lalitha Nursery</span> is a family-run business 
-              on Veeravaram Road in Kadiyam — Andhra Pradesh's nursery hub.
+              <span className="font-bold text-leaf">Siva Lalitha Nursery</span> is a family-run 
+              plant nursery and landscaping service on Veeravaram Road in Kadiyam — widely 
+              recognized as Andhra Pradesh's premier nursery hub, supplying plants to buyers 
+              across the state.
             </p>
             
             <p>
-              We supply fruit plants, flowering plants, avenue trees, lawn grass, and landscaping materials 
-              for homes, farms, resorts, and commercial projects across East Godavari district.
+              "Our passion is helping people grow — whether it's a home garden, a farm orchard, 
+              or a large commercial landscape," says <span className="font-semibold">Kamireddy Nagu</span>, 
+              founder and owner. "Kadiyam has been a nursery hub for generations, and we take 
+              pride in carrying that tradition forward with quality plants and honest service."
             </p>
             
+            <p>
+              We supply <span className="font-semibold">100+ varieties</span> of fruit plants, 
+              flowering plants, avenue trees, lawn grass (Mexican and Pearl varieties), and 
+              landscaping materials for homes, farms, resorts, and commercial projects across 
+              East Godavari district. Our expertise includes grafted fruit varieties, 
+              air-layered ornamentals, and drip-irrigated landscaping solutions.
+            </p>
+
             <p>
               Whether you're planting a small home garden or setting up an orchard, 
-              we have the plants and experience to help.
+              we have the plants and 10+ years of hands-on experience to help you succeed.
             </p>
           </div>
 

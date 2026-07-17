@@ -40,7 +40,8 @@ const Hero = () => {
 
           {/* Intro */}
           <p className="text-xl md:text-2xl text-white/95 mb-12 max-w-2xl leading-relaxed">
-            Fruit and flower plants for your home or farm. Landscaping services across East Godavari.
+            <span className="font-bold">100+ plant varieties</span> — fruit, flowering, avenue, lawn. 
+            Landscaping services across East Godavari. <span className="font-bold">500+ happy customers served.</span>
           </p>
 
           {/* Contact Actions - Primary Focus */}

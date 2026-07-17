@@ -66,7 +66,7 @@ const Footer = () => {
                 97053 68999
               </a>
               <a href="tel:+919493341557" className="block hover:text-marigold transition-colors">
-                94933 41557
+                97047 69888
               </a>
               <a
                 href="mailto:nagu.kamireddy999@gmail.com"
