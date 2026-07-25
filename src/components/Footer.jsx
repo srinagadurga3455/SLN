@@ -22,7 +22,7 @@ const Footer = () => {
                 <img 
                   src="/images/gallery/logo.jpeg" 
                   alt="Siva Lalitha Nursery Logo" 
-                  className="w-full h-full object-cover rounded-full scale-[1.3]"
+                  className="w-full h-full object-cover rounded-full scale-110"
                 />
               </div>
               <h3 className="font-display font-bold text-2xl uppercase">

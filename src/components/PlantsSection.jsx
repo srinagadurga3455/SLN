@@ -2,6 +2,57 @@ import React, { useState } from 'react'
 import { plantsData, categories } from '../data/plantsData'
 import PlantCard from './PlantCard'
 
+const extraPhotos = [
+  '/images/extraas/image.png',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.08.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.09.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.12.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.13 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.13.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.14 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.14.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.15.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.16 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.16.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.17 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.17.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.18.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.19 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.19.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.20.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.21 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.21.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.23 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.23 (2).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.23.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.24 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.24 (2).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.24.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.25.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.17.49.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.22.39.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.22.40.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 19.24.56.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.04.23.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.04.24 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.04.24.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.04.25 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.04.25 (2).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.04.25.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.06.27 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.06.27.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.06.28 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.06.28.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.06.29 (1).jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.06.29.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.07.00.jpeg',
+  '/images/extraas/WhatsApp Image 2026-07-24 at 22.07.01.jpeg',
+  '/images/rem/WhatsApp Image 2026-07-24 at 22.10.52 (1).jpeg',
+  '/images/rem/WhatsApp Image 2026-07-24 at 22.10.52.jpeg',
+  '/images/rem/WhatsApp Image 2026-07-24 at 22.10.53.jpeg',
+  '/images/rem/WhatsApp Image 2026-07-24 at 22.10.54.jpeg'
+]
+
 const PlantsSection = () => {
   const [activeCategory, setActiveCategory] = useState('all')
   const [showAll, setShowAll] = useState(false)
@@ -10,7 +61,7 @@ const PlantsSection = () => {
     ? plantsData 
     : plantsData.filter(plant => plant.category === activeCategory)
 
-  const INITIAL_DISPLAY_COUNT = 3
+  const INITIAL_DISPLAY_COUNT = 10
   const displayedPlants = showAll ? filteredPlants : filteredPlants.slice(0, INITIAL_DISPLAY_COUNT)
 
   return (
@@ -61,10 +112,20 @@ const PlantsSection = () => {
           {displayedPlants.map((plant, index) => (
             <PlantCard key={index} plant={plant} />
           ))}
+          {showAll && extraPhotos.map((src, index) => (
+            <div key={index} className="relative h-72 bg-gray-100 overflow-hidden border border-leaf/10 group">
+              <img
+                src={src}
+                alt=""
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
 
         {/* See More Button */}
-        {filteredPlants.length > INITIAL_DISPLAY_COUNT && (
+        {filteredPlants.length > INITIAL_DISPLAY_COUNT || extraPhotos.length > 0 && (
           <div className="text-center mb-16">
             <button
               onClick={() => setShowAll(!showAll)}
@@ -79,7 +140,7 @@ const PlantsSection = () => {
                 </>
               ) : (
                 <>
-                  See More Plants ({filteredPlants.length - INITIAL_DISPLAY_COUNT} more)
+                  See More ({filteredPlants.length - Math.min(filteredPlants.length, INITIAL_DISPLAY_COUNT) + extraPhotos.length} more)
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>

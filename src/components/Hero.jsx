@@ -28,7 +28,7 @@ const Hero = () => {
               <img 
                 src="/images/gallery/logo.jpeg" 
                 alt="Siva Lalitha Nursery Logo" 
-                className="w-full h-full object-cover rounded-full scale-[1.3]"
+                className="w-full h-full object-cover rounded-full scale-110"
               />
             </div>
             <h1 className="font-display font-black text-5xl md:text-7xl text-white leading-tight uppercase">
@@ -75,7 +75,7 @@ const Hero = () => {
               <div className="font-semibold text-white mb-1">More Numbers:</div>
               <a href="tel:+919705368999" className="hover:text-marigold transition-colors">97053 68999</a>
               {' • '}
-              <a href="tel:+919493341557" className="hover:text-marigold transition-colors">94933 41557</a>
+              <a href="tel:+919704769888" className="hover:text-marigold transition-colors">97047 69888</a>
             </div>
             <div>
               <div className="font-semibold text-white mb-1">Location:</div>
