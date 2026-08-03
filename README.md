@@ -25,6 +25,9 @@ npm run dev
 # Build for production
 npm run build
 
+# Prerender all routes to static HTML (SEO)
+npm run prerender
+
 # Preview production build
 npm run preview
 ```
@@ -78,7 +81,7 @@ npm run preview
 
 ## 🚀 SEO Features
 
-- **Prerendered HTML** — `react-snap` (postbuild) generates static HTML for every route so Google sees full content without executing JS.
+- **Prerendered HTML** — `npm run prerender` (react-snap) generates static HTML for every route so Google sees full content without executing JS. Run it locally after `npm run build`; Vercel never runs it.
 - **Per-page metadata** — every route sets unique title, meta description, canonical, Open Graph and Twitter cards via `src/Seo.jsx`.
 - **Structured data** — LocalBusiness, Organization, WebSite, Product, Breadcrumb, FAQ and Article JSON-LD.
 - **Sitemap + robots** — `sitemap.xml` lists every URL; `robots.txt` allows Google, Bing and AI engines.
@@ -110,8 +113,9 @@ To add or remove plants, simply edit the `src/data/plantsData.js` file:
 ```
 
 The plant slug is auto-generated from the name, and its page, schema and
-related-plant links update automatically. Re-run `npm run build` to regenerate
-the prerendered pages and `npm run images:optimize` for any new images.
+related-plant links update automatically. Re-run `npm run build` and
+`npm run prerender` to regenerate the static pages and `npm run images:optimize`
+for any new images.
 
 **Categories available** (each maps to an SEO landing page):
 `flowering`, `ornamental`, `fruit`, `avenue`, `indoor`, `outdoor`, `garden`,
