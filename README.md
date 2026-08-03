@@ -33,39 +33,57 @@ npm run preview
 
 ```
 /siva-lalitha-nursery
-├── index.html
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
+├── index.html               # Shell meta tags, fonts, favicon, LCP preconnects
+├── package.json             # react-snap prerender config (SEO)
+├── vite.config.js           # ES2019 build target (prerender-compatible)
+├── vercel.json              # Vercel SPA rewrites + caching headers
 ├── /public
-│   ├── logo.png
-│   ├── /images
-│   │   ├── hero-placeholder.jpg (Replace with actual aerial nursery photo)
-│   │   ├── /gallery
-│   │   └── /plants
-│   └── /videos
-│       └── nursery-aerial.mp4 (Optional: Add real drone footage)
-├── /src
-│   ├── main.jsx
-│   ├── App.jsx
-│   ├── index.css
-│   ├── /data
-│   │   └── plantsData.js      (Edit this to add/remove plants)
-│   └── /components
-│       ├── Navbar.jsx
-│       ├── Hero.jsx
-│       ├── HeroBackground.jsx  (Cinematic background with video/image support)
-│       ├── About.jsx
-│       ├── PlantsSection.jsx
-│       ├── PlantCard.jsx
-│       ├── ServicesSection.jsx
-│       ├── Gallery.jsx
-│       ├── Contact.jsx
-│       ├── Footer.jsx
-│       └── WhatsAppButton.jsx
-└── README.md
+│   ├── robots.txt
+│   ├── sitemap.xml          # All 40+ SEO URLs
+│   ├── _redirects           # Netlify SPA fallback
+│   ├── _headers             # Netlify caching
+│   └── /images
+│       ├── /plants          # Optimized WebP plant images (descriptive names)
+│       ├── /gallery         # Project / gallery photos
+│       └── ...
+├── /scripts
+│   └── optimize-images.mjs  # `npm run images:optimize` (WebP conversion)
+└── /src
+    ├── main.jsx             # HelmetProvider
+    ├── App.jsx              # React Router + lazy-loaded pages
+    ├── siteConfig.js        # Business NAP (name, address, phone) — edit here
+    ├── Seo.jsx              # Per-page title/meta/OG/canonical/JSON-LD
+    ├── structuredData.js    # LocalBusiness, Product, FAQ, Breadcrumb, Article, Service schema
+    ├── /data
+    │   ├── plantsData.js    # Plant catalog + care info (edit to add plants)
+    │   ├── seoContent.js    # Category & service page copy (Kadiyam-focused)
+    │   └── blogData.js      # Blog articles
+    ├── /components          # Shared UI (Navbar, Footer, cards, FAQ, CTAs)
+    └── /pages               # One component per URL route
 ```
+
+## 🗺️ SEO Pages (routes)
+
+| URL | Purpose |
+|---|---|
+| `/` | Home — hero, about, work, plants, services, FAQ, contact |
+| `/plant-nursery-in-kadiyam` | Primary local landing page ("Plant Nursery in Kadiyam") |
+| `/plants` | All plants hub |
+| `/plants/:category` | Category pages (flower-plants, fruit-plants, indoor-plants, etc.) |
+| `/plants/:plant` | Individual plant pages with care + FAQs + related plants |
+| `/services`, `/services/landscaping` | Services + Landscaping in Kadiyam |
+| `/wholesale-plants` | Wholesale plant nursery page |
+| `/blog`, `/blog/:slug` | Blog index + articles |
+| `/about`, `/contact`, `/faq` | Support pages |
+
+## 🚀 SEO Features
+
+- **Prerendered HTML** — `react-snap` (postbuild) generates static HTML for every route so Google sees full content without executing JS.
+- **Per-page metadata** — every route sets unique title, meta description, canonical, Open Graph and Twitter cards via `src/Seo.jsx`.
+- **Structured data** — LocalBusiness, Organization, WebSite, Product, Breadcrumb, FAQ and Article JSON-LD.
+- **Sitemap + robots** — `sitemap.xml` lists every URL; `robots.txt` allows Google, Bing and AI engines.
+- **Image optimization** — run `npm run images:optimize` to convert images to WebP.
+- **Code splitting** — interior pages are lazy-loaded to keep the home bundle small.
 
 ## ✏️ How to Edit Plants
 
@@ -76,19 +94,28 @@ To add or remove plants, simply edit the `src/data/plantsData.js` file:
   name: 'Mango',
   teluguName: 'మామిడి',
   category: 'fruit',
-  image: '/images/plants/mango.jpg',
-  description: 'King of fruits, various grafted varieties available'
+  categories: ['fruit', 'tree', 'outdoor', 'garden'],
+  image: '/images/plants/mango.webp',
+  description: 'King of fruits, various grafted varieties available',
+  care: {
+    sunlight: 'Full sun',
+    watering: 'Water young trees weekly',
+    soil: 'Deep, well-drained loamy soil',
+    growth: 'Grows 3-8 m',
+    bloom: 'Flowers in winter, fruit by summer',
+    tips: 'Grafted varieties fruit in 3-4 years'
+  },
+  faqs: [{ q: 'Question?', a: 'Answer.' }]
 }
 ```
 
-**Categories available:**
-- `ornamental` - Ornamental garden plants
-- `flowering` - Flowering plants
-- `fruit` - Fruit plants
-- `avenue` - Avenue & landscaping trees
-- `lawn` - Lawn grass & turf
-- `bonsai` - Bonsai & indoor plants
-- `hedge` - Hedge & border plants
+The plant slug is auto-generated from the name, and its page, schema and
+related-plant links update automatically. Re-run `npm run build` to regenerate
+the prerendered pages and `npm run images:optimize` for any new images.
+
+**Categories available** (each maps to an SEO landing page):
+`flowering`, `ornamental`, `fruit`, `avenue`, `indoor`, `outdoor`, `garden`,
+`medicinal`, `tree`, `lawn`, `hedge`, `bonsai`
 
 ## 🎬 Hero Background
 

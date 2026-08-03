@@ -11,7 +11,7 @@ const Hero = () => {
       <HeroBackground
         // videoSrc="/videos/nursery-aerial.mp4" // Uncomment when real drone footage is available
         imageSrc="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=2532&auto=format&fit=crop" // Greenhouse with rows of plants
-        imageAlt="Aerial view of Kadiyam nursery fields"
+        imageAlt="Plant nursery greenhouse with rows of healthy green plants in Kadiyam"
       />
 
       {/* Content Layer */}

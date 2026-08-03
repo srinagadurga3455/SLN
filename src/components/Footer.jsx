@@ -1,27 +1,38 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { categories } from '../data/plantsData'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
-  const scrollToSection = (e, href) => {
-    e.preventDefault()
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-  }
+  const quickLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'Plant Nursery in Kadiyam', href: '/plant-nursery-in-kadiyam' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Landscaping Services', href: '/services/landscaping' },
+    { name: 'Wholesale Plants', href: '/wholesale-plants' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
+  ]
+
+  const plantLinks = Object.values(categories)
+    .filter((cat) => cat.slug)
+    .map((cat) => ({ name: `${cat.name} in Kadiyam`, href: `/plants/${cat.slug}` }))
 
   return (
     <footer className="bg-leaf text-white">
       <div className="container-custom px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="bg-white rounded-full shadow-lg overflow-hidden w-16 h-16 flex items-center justify-center">
-                <img 
-                  src="/images/gallery/logo.jpeg" 
-                  alt="Siva Lalitha Nursery Logo" 
+                <img
+                  src="/images/gallery/logo.jpeg"
+                  alt="Siva Lalitha Nursery Logo"
+                  width="64"
+                  height="64"
                   className="w-full h-full object-cover rounded-full scale-110"
                 />
               </div>
@@ -30,7 +41,8 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-white/80 leading-relaxed mb-4">
-              Supplying quality plants and landscaping services from Kadiyam, Andhra Pradesh since 2010.
+              Supplying quality plants and landscaping services from Veeravaram Road, Kadiyam,
+              Andhra Pradesh since 2010.
             </p>
             <p className="text-white/60 text-sm">
               Owned by Kamireddy Nagu
@@ -41,15 +53,31 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {['Home', 'About', 'Plants', 'Services', 'Contact'].map((link) => (
-                <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
-                    onClick={(e) => scrollToSection(e, `#${link.toLowerCase()}`)}
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
                     className="text-white/80 hover:text-marigold transition-colors"
                   >
-                    {link}
-                  </a>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Plant Categories */}
+          <div>
+            <h4 className="font-bold text-lg mb-4">Our Plants</h4>
+            <ul className="space-y-2">
+              {plantLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-white/80 hover:text-marigold transition-colors"
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -73,6 +101,14 @@ const Footer = () => {
                 className="block hover:text-marigold transition-colors text-sm"
               >
                 nagu.kamireddy999@gmail.com
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Veeravaram+Road+Kadiyam+East+Godavari+Andhra+Pradesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:text-marigold transition-colors text-sm"
+              >
+                Veeravaram Road, Kadiyam, East Godavari, Andhra Pradesh
               </a>
             </div>
           </div>

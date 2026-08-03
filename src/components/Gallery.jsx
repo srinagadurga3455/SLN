@@ -6,49 +6,49 @@ const Gallery = () => {
   // Only real Araku Festival work - remove all fake/stock images
   const projects = [
     {
-      src: '/images/gallery/araku-fest-1.jpg',
+      src: '/images/gallery/araku-fest-1.webp',
       alt: 'Araku Festival landscaping work - Tree plantation on roadside',
       category: 'Public Work',
       description: 'Tree plantation and landscaping work for Araku Utsav Festival - roadside beautification'
     },
     {
-      src: '/images/gallery/araku-fest-2.jpg',
+      src: '/images/gallery/araku-fest-2.webp',
       alt: 'Araku Festival event - Team at festival venue',
       category: 'Public Work',
       description: 'Our team participating in Araku Festival landscaping initiative'
     },
     {
-      src: '/images/gallery/araku-fest-3.jpg',
+      src: '/images/gallery/araku-fest-3.webp',
       alt: 'Araku Festival - Tree plantation ceremony',
       category: 'Public Work',
       description: 'Community tree plantation ceremony at Araku Utsav'
     },
     {
-      src: '/images/gallery/araku-fest-4.jpg',
+      src: '/images/gallery/araku-fest-4.webp',
       alt: 'Araku Festival - Landscaping project',
       category: 'Public Work',
       description: 'Landscaping and green initiative work at Araku Festival'
     },
     {
-      src: '/images/gallery/araku-fest-5.jpg',
+      src: '/images/gallery/araku-fest-5.webp',
       alt: 'Araku Festival - Team collaboration',
       category: 'Public Work',
       description: 'Our team working on beautification projects during Araku Utsav'
     },
     {
-      src: '/images/gallery/araku-fest-6.jpg',
+      src: '/images/gallery/araku-fest-6.webp',
       alt: 'Araku Festival - Green initiative',
       category: 'Public Work',
       description: 'Environmental beautification work at Araku Valley'
     },
     {
-      src: '/images/gallery/araku-fest-7.jpg',
+      src: '/images/gallery/araku-fest-7.webp',
       alt: 'Araku Festival - Plantation drive',
       category: 'Public Work',
       description: 'Mass tree plantation drive during Araku Utsav celebrations'
     },
     {
-      src: '/images/gallery/araku-fest-8.jpg',
+      src: '/images/gallery/araku-fest-8.webp',
       alt: 'Araku Festival - Community engagement',
       category: 'Public Work',
       description: 'Engaging with local community for sustainable landscaping'

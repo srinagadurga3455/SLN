@@ -18,19 +18,19 @@ const OurWork = () => {
       ],
       mainPhotos: [
         {
-          src: '/images/rjy/FB_IMG_1564844670067.jpg',
+          src: '/images/rjy/FB_IMG_1564844670067.webp',
           alt: 'Rajamahendravaram Railway Bridge - Tree plantation and cultural decoration during Pushkaralu 2016',
           caption: 'Bridge Beautification with Classical Dance Art',
           description: 'The railway bridge decorated with vibrant photographs of classical Indian dances, combining cultural heritage with environmental beautification for the sacred Pushkaralu festival.'
         },
         {
-          src: '/images/rjy/FB_IMG_1564844676199.jpg',
+          src: '/images/rjy/FB_IMG_1564844676199.webp',
           alt: 'Rajamahendravaram Pushkaralu - Tree plantation under railway bridge',
           caption: 'Tree Plantation Initiative',
           description: 'Extensive tree plantation work under the railway bridge, creating green spaces that would serve pilgrims and residents for years to come.'
         },
         {
-          src: '/images/rjy/image.png',
+          src: '/images/rjy/image.webp',
           alt: 'Rajamahendravaram Railway Bridge Project - Cultural and environmental transformation',
           caption: 'Complete Bridge Transformation',
           description: 'The full scope of the project showcasing the harmonious integration of nature and culture under the railway bridge in Rajamahendravaram.'
@@ -58,29 +58,29 @@ const OurWork = () => {
       ],
       mainPhotos: [
         {
-          src: '/images/gallery/araku-fest-3.jpg',
+          src: '/images/gallery/araku-fest-3.webp',
           alt: 'Araku Festival - Tree plantation ceremony',
           caption: 'Community Tree Plantation',
           description: 'Engaging with the local community to create sustainable green spaces that will benefit the region for generations.'
         },
         {
-          src: '/images/gallery/araku-fest-5.jpg',
+          src: '/images/gallery/araku-fest-5.webp',
           alt: 'Araku Festival - Team collaboration',
           caption: 'Team Beautification Work',
           description: 'Our team working together to beautify the festival venue and surrounding areas.'
         },
         {
-          src: '/images/gallery/araku-fest-6.png',
+          src: '/images/gallery/araku-fest-6.webp',
           alt: 'Araku Festival - Landscaping project view',
           caption: 'Landscaping Work',
           description: 'Beautiful landscaping and greenery development as part of the Araku Utsav Festival.'
         }
       ],
       additionalPhotos: [
-        { src: '/images/gallery/araku-fest-1.jpg', alt: 'Araku Festival - Roadside tree plantation work', caption: 'Roadside Plantation' },
-        { src: '/images/gallery/araku-fest-2.jpg', alt: 'Araku Festival - Team at event venue', caption: 'Festival Grounds' },
-        { src: '/images/gallery/araku-fest-4.jpg', alt: 'Araku Festival - Green initiative work', caption: 'Green Initiative Work' },
-        { src: '/images/gallery/image.png', alt: 'Araku Festival - Project overview', caption: 'Project Image' }
+        { src: '/images/gallery/araku-fest-1.webp', alt: 'Araku Festival - Roadside tree plantation work', caption: 'Roadside Plantation' },
+        { src: '/images/gallery/araku-fest-2.webp', alt: 'Araku Festival - Team at event venue', caption: 'Festival Grounds' },
+        { src: '/images/gallery/araku-fest-4.webp', alt: 'Araku Festival - Green initiative work', caption: 'Green Initiative Work' },
+        { src: '/images/gallery/image.webp', alt: 'Araku Festival - Project overview', caption: 'Project Image' }
       ],
       contributions: [
         'Supplied quality saplings and plants suitable for the Araku Valley climate and terrain',
@@ -103,33 +103,33 @@ const OurWork = () => {
       ],
       mainPhotos: [
         {
-          src: '/images/hyd-shankarapalli/20150220_090414.jpg',
+          src: '/images/hyd-shankarapalli/20150220_090414.webp',
           alt: 'Shankarapalli Farm House - Landscaping and garden development',
           caption: 'Garden Area Development',
           description: 'Landscaping work at the Shankarapalli farm house featuring garden development with decorative plants and ornamental trees.'
         },
         {
-          src: '/images/hyd-shankarapalli/20150221_120441.jpg',
+          src: '/images/hyd-shankarapalli/20150221_120441.webp',
           alt: 'Shankarapalli Farm House - Tree plantation work',
           caption: 'Tree Plantation Drive',
           description: 'Strategic tree plantation work to create natural shade and enhance the beauty of the farm house property.'
         },
         {
-          src: '/images/hyd-shankarapalli/20150223_104808.jpg',
+          src: '/images/hyd-shankarapalli/20150223_104808.webp',
           alt: 'Shankarapalli Farm House - Green space development',
           caption: 'Green Space Creation',
           description: 'Development of lush green spaces and garden areas to transform the farm house into a serene environment.'
         }
       ],
       additionalPhotos: [
-        { src: '/images/hyd-shankarapalli/20150228_082502.jpg', alt: 'Shankarapalli Farm House - Landscape view 1', caption: 'Landscape Development Work' },
-        { src: '/images/hyd-shankarapalli/20150228_082513.jpg', alt: 'Shankarapalli Farm House - Landscape view 2', caption: 'Farm House Greenery' },
-        { src: '/images/hyd-shankarapalli/20150228_095908.jpg', alt: 'Shankarapalli Farm House - Landscape view 3', caption: 'Garden Setup' },
-        { src: '/images/hyd-shankarapalli/20150228_100045.jpg', alt: 'Shankarapalli Farm House - Landscape view 4', caption: 'Plantation Work' },
-        { src: '/images/hyd-shankarapalli/20150228_100103.jpg', alt: 'Shankarapalli Farm House - Landscape view 5', caption: 'Tree Plantation Area' },
-        { src: '/images/hyd-shankarapalli/20150228_100109.jpg', alt: 'Shankarapalli Farm House - Landscape view 6', caption: 'Ornamental Garden' },
-        { src: '/images/hyd-shankarapalli/20150312_144037.jpg', alt: 'Shankarapalli Farm House - Landscape view 7', caption: 'Complete Landscape View' },
-        { src: '/images/hyd-shankarapalli/20150313_173618.jpg', alt: 'Shankarapalli Farm House - Final landscaping', caption: 'Final Landscaping Outcome' }
+        { src: '/images/hyd-shankarapalli/20150228_082502.webp', alt: 'Shankarapalli Farm House - Landscape view 1', caption: 'Landscape Development Work' },
+        { src: '/images/hyd-shankarapalli/20150228_082513.webp', alt: 'Shankarapalli Farm House - Landscape view 2', caption: 'Farm House Greenery' },
+        { src: '/images/hyd-shankarapalli/20150228_095908.webp', alt: 'Shankarapalli Farm House - Landscape view 3', caption: 'Garden Setup' },
+        { src: '/images/hyd-shankarapalli/20150228_100045.webp', alt: 'Shankarapalli Farm House - Landscape view 4', caption: 'Plantation Work' },
+        { src: '/images/hyd-shankarapalli/20150228_100103.webp', alt: 'Shankarapalli Farm House - Landscape view 5', caption: 'Tree Plantation Area' },
+        { src: '/images/hyd-shankarapalli/20150228_100109.webp', alt: 'Shankarapalli Farm House - Landscape view 6', caption: 'Ornamental Garden' },
+        { src: '/images/hyd-shankarapalli/20150312_144037.webp', alt: 'Shankarapalli Farm House - Landscape view 7', caption: 'Complete Landscape View' },
+        { src: '/images/hyd-shankarapalli/20150313_173618.webp', alt: 'Shankarapalli Farm House - Final landscaping', caption: 'Final Landscaping Outcome' }
       ],
       contributions: [
         'Provided complete landscaping solutions for a private farm house property in Shankarapalli, Hyderabad',
@@ -153,39 +153,39 @@ const OurWork = () => {
       ],
       mainPhotos: [
         {
-          src: '/images/Araku/20191203_121844.jpg',
+          src: '/images/Araku/20191203_121844.webp',
           alt: 'Araku Farm House - Garden area',
           caption: 'Garden Area Development',
           description: 'Beautiful garden development with well-maintained plants and landscaping at the Araku farm house.'
         },
         {
-          src: '/images/Araku/20190101_124850.jpg',
+          src: '/images/Araku/20190101_124850.webp',
           alt: 'Araku Farm House - Landscape view',
           caption: 'Farm House Landscape',
           description: 'Scenic landscape view of the Araku farm house showcasing the complete greenery transformation.'
         },
         {
-          src: '/images/Araku/20190101_125024.jpg',
+          src: '/images/Araku/20190101_125024.webp',
           alt: 'Araku Farm House - Ornamental garden',
           caption: 'Ornamental Garden',
           description: 'Ornamental garden area with decorative plants enhancing the beauty of the farm house.'
         }
       ],
       additionalPhotos: [
-        { src: '/images/Araku/20190101_124825.jpg', alt: 'Araku Farm House - Landscaping and garden development', caption: 'Initial Garden Work' },
-        { src: '/images/Araku/20190101_124829.jpg', alt: 'Araku Farm House - Tree plantation work', caption: 'Tree Plantation' },
-        { src: '/images/Araku/20190101_124848.jpg', alt: 'Araku Farm House - Green space development', caption: 'Green Space Creation' },
-        { src: '/images/Araku/20190101_125009.jpg', alt: 'Araku Farm House - Garden setup', caption: 'Garden Setup' },
-        { src: '/images/Araku/20190101_125011.jpg', alt: 'Araku Farm House - Plantation area', caption: 'Plantation Work' },
-        { src: '/images/Araku/20190101_125019.jpg', alt: 'Araku Farm House - Landscape view', caption: 'Complete Landscape View' },
-        { src: '/images/Araku/20190101_125021.jpg', alt: 'Araku Farm House - Tree plantation', caption: 'Tree Plantation Area' },
-        { src: '/images/Araku/20190101_120328.jpg', alt: 'Araku Farm House - Scenic view', caption: 'Scenic Landscape' },
-        { src: '/images/Araku/20190101_153307.jpg', alt: 'Araku Farm House - Final landscaping', caption: 'Final Landscaping Outcome' },
-        { src: '/images/Araku/20190101_153421.jpg', alt: 'Araku Farm House - Landscape detail', caption: 'Landscape Detail' },
-        { src: '/images/Araku/20191203_121848.jpg', alt: 'Araku Farm House - Garden detail', caption: 'Garden Detail' },
-        { src: '/images/Araku/20201117_094514.jpg', alt: 'Araku Farm House - Later view', caption: 'Matured Landscape' },
-        { src: '/images/Araku/20201118_081525.jpg', alt: 'Araku Farm House - Later garden view', caption: 'Matured Garden Area' },
-        { src: '/images/Araku/20201118_081541.jpg', alt: 'Araku Farm House - Later landscape', caption: 'Well-Established Landscape' }
+        { src: '/images/Araku/20190101_124825.webp', alt: 'Araku Farm House - Landscaping and garden development', caption: 'Initial Garden Work' },
+        { src: '/images/Araku/20190101_124829.webp', alt: 'Araku Farm House - Tree plantation work', caption: 'Tree Plantation' },
+        { src: '/images/Araku/20190101_124848.webp', alt: 'Araku Farm House - Green space development', caption: 'Green Space Creation' },
+        { src: '/images/Araku/20190101_125009.webp', alt: 'Araku Farm House - Garden setup', caption: 'Garden Setup' },
+        { src: '/images/Araku/20190101_125011.webp', alt: 'Araku Farm House - Plantation area', caption: 'Plantation Work' },
+        { src: '/images/Araku/20190101_125019.webp', alt: 'Araku Farm House - Landscape view', caption: 'Complete Landscape View' },
+        { src: '/images/Araku/20190101_125021.webp', alt: 'Araku Farm House - Tree plantation', caption: 'Tree Plantation Area' },
+        { src: '/images/Araku/20190101_120328.webp', alt: 'Araku Farm House - Scenic view', caption: 'Scenic Landscape' },
+        { src: '/images/Araku/20190101_153307.webp', alt: 'Araku Farm House - Final landscaping', caption: 'Final Landscaping Outcome' },
+        { src: '/images/Araku/20190101_153421.webp', alt: 'Araku Farm House - Landscape detail', caption: 'Landscape Detail' },
+        { src: '/images/Araku/20191203_121848.webp', alt: 'Araku Farm House - Garden detail', caption: 'Garden Detail' },
+        { src: '/images/Araku/20201117_094514.webp', alt: 'Araku Farm House - Later view', caption: 'Matured Landscape' },
+        { src: '/images/Araku/20201118_081525.webp', alt: 'Araku Farm House - Later garden view', caption: 'Matured Garden Area' },
+        { src: '/images/Araku/20201118_081541.webp', alt: 'Araku Farm House - Later landscape', caption: 'Well-Established Landscape' }
       ],
       contributions: [
         'Provided complete landscaping solutions for a farm house in the scenic Araku Valley region',
@@ -209,27 +209,27 @@ const OurWork = () => {
       ],
       mainPhotos: [
         {
-          src: '/images/nirmal/FB_IMG_1564843990795.jpg',
+          src: '/images/nirmal/FB_IMG_1564843990795.webp',
           alt: 'Nirmal Project - Landscaping work',
           caption: 'Landscaping Work',
           description: 'Landscaping and greenery development work undertaken in the Nirmal region.'
         },
         {
-          src: '/images/nirmal/FB_IMG_1564844004452.jpg',
+          src: '/images/nirmal/FB_IMG_1564844004452.webp',
           alt: 'Nirmal Project - Tree plantation',
           caption: 'Tree Plantation',
           description: 'Tree plantation drive as part of the greenery development initiative in Nirmal.'
         },
         {
-          src: '/images/nirmal/FB_IMG_1564844016416.jpg',
+          src: '/images/nirmal/FB_IMG_1564844016416.webp',
           alt: 'Nirmal Project - Garden development',
           caption: 'Garden Development',
           description: 'Garden area development creating aesthetic green spaces in the Nirmal project.'
         }
       ],
       additionalPhotos: [
-        { src: '/images/nirmal/FB_IMG_1564844023566.jpg', alt: 'Nirmal Project - Additional view', caption: 'Additional Landscape View' },
-        { src: '/images/nirmal/FB_IMG_1564844055964.jpg', alt: 'Nirmal Project - Final view', caption: 'Final Project View' }
+        { src: '/images/nirmal/FB_IMG_1564844023566.webp', alt: 'Nirmal Project - Additional view', caption: 'Additional Landscape View' },
+        { src: '/images/nirmal/FB_IMG_1564844055964.webp', alt: 'Nirmal Project - Final view', caption: 'Final Project View' }
       ],
       contributions: [
         'Provided landscaping and greenery development services in the Nirmal region',

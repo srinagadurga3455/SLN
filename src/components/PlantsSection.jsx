@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { plantsData, categories } from '../data/plantsData'
+import { Link } from 'react-router-dom'
+import { plantsData, categories, getPlantsByCategory } from '../data/plantsData'
 import PlantCard from './PlantCard'
 
 const extraPhotos = [
@@ -57,12 +58,16 @@ const PlantsSection = () => {
   const [activeCategory, setActiveCategory] = useState('all')
   const [showAll, setShowAll] = useState(false)
 
-  const filteredPlants = activeCategory === 'all' 
-    ? plantsData 
-    : plantsData.filter(plant => plant.category === activeCategory)
+  const filteredPlants = activeCategory === 'all'
+    ? plantsData
+    : getPlantsByCategory(activeCategory)
 
   const INITIAL_DISPLAY_COUNT = 10
   const displayedPlants = showAll ? filteredPlants : filteredPlants.slice(0, INITIAL_DISPLAY_COUNT)
+
+  const categoryEntries = Object.entries(categories).filter(
+    ([key]) => getPlantsByCategory(key).length > 0
+  )
 
   return (
     <section id="plants" className="section-padding bg-clay">
@@ -78,7 +83,7 @@ const PlantsSection = () => {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap gap-3 mb-12 justify-center">
+        <div className="flex flex-wrap gap-3 mb-6 justify-center">
           <button
             onClick={() => setActiveCategory('all')}
             className={`px-6 py-2.5 font-semibold transition-colors ${
@@ -89,8 +94,8 @@ const PlantsSection = () => {
           >
             All ({plantsData.length})
           </button>
-          {Object.entries(categories).map(([key, { name }]) => {
-            const count = plantsData.filter(p => p.category === key).length
+          {categoryEntries.map(([key, { name }]) => {
+            const count = getPlantsByCategory(key).length
             return (
               <button
                 key={key}
@@ -107,10 +112,29 @@ const PlantsSection = () => {
           })}
         </div>
 
+        {/* Internal links to SEO category pages */}
+        <div className="flex flex-wrap gap-3 justify-center mb-12" aria-label="Plant categories">
+          {categoryEntries.map(([key, { name, slug }]) => (
+            <Link
+              key={key}
+              to={`/plants/${slug}`}
+              className="bg-leaf/5 hover:bg-leaf hover:text-white text-leaf border border-leaf/30 px-4 py-2 text-sm font-semibold transition-colors"
+            >
+              {name}
+            </Link>
+          ))}
+          <Link
+            to="/plants"
+            className="bg-marigold hover:bg-marigold-dark text-white px-4 py-2 text-sm font-semibold transition-colors"
+          >
+            View All Plants →
+          </Link>
+        </div>
+
         {/* Plants Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {displayedPlants.map((plant, index) => (
-            <PlantCard key={index} plant={plant} />
+            <PlantCard key={plant.slug} plant={plant} index={index} />
           ))}
           {showAll && extraPhotos.map((src, index) => (
             <div key={index} className="relative h-72 bg-gray-100 overflow-hidden border border-leaf/10 group">

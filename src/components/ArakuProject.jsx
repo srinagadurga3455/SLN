@@ -41,7 +41,7 @@ const ArakuProject = () => {
             <div className="space-y-4">
               <div className="relative h-96 bg-leaf/10 border-2 border-leaf/20 overflow-hidden">
                 <img
-                  src="/images/gallery/araku-fest-1.jpg"
+                  src="/images/gallery/araku-fest-1.webp"
                   alt="Araku Festival - Roadside tree plantation work"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -62,7 +62,7 @@ const ArakuProject = () => {
             <div className="space-y-4">
               <div className="relative h-96 bg-leaf/10 border-2 border-leaf/20 overflow-hidden">
                 <img
-                  src="/images/gallery/araku-fest-2.jpg"
+                  src="/images/gallery/araku-fest-2.webp"
                   alt="Araku Festival - Team at event venue"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -95,7 +95,7 @@ const ArakuProject = () => {
             <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="relative h-72 bg-leaf/10 border-2 border-leaf/20 overflow-hidden group/img">
                 <img
-                  src="/images/gallery/araku-fest-3.jpg"
+                  src="/images/gallery/araku-fest-3.webp"
                   alt="Araku Festival - Tree plantation ceremony"
                   className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                 />
@@ -106,7 +106,7 @@ const ArakuProject = () => {
 
               <div className="relative h-72 bg-leaf/10 border-2 border-leaf/20 overflow-hidden group/img">
                 <img
-                  src="/images/gallery/araku-fest-4.jpg"
+                  src="/images/gallery/araku-fest-4.webp"
                   alt="Araku Festival - Landscaping project"
                   className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                 />
@@ -117,7 +117,7 @@ const ArakuProject = () => {
 
               <div className="relative h-72 bg-leaf/10 border-2 border-leaf/20 overflow-hidden group/img">
                 <img
-                  src="/images/gallery/araku-fest-5.jpg"
+                  src="/images/gallery/araku-fest-5.webp"
                   alt="Araku Festival - Team collaboration"
                   className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                 />
@@ -128,7 +128,7 @@ const ArakuProject = () => {
 
               <div className="relative h-72 bg-leaf/10 border-2 border-leaf/20 overflow-hidden group/img">
                 <img
-                  src="/images/gallery/araku-fest-6.jpg"
+                  src="/images/gallery/araku-fest-6.webp"
                   alt="Araku Festival - Green initiative"
                   className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                 />
@@ -139,7 +139,7 @@ const ArakuProject = () => {
 
               <div className="relative h-72 bg-leaf/10 border-2 border-leaf/20 overflow-hidden group/img">
                 <img
-                  src="/images/gallery/araku-fest-7.jpg"
+                  src="/images/gallery/araku-fest-7.webp"
                   alt="Araku Festival - Plantation drive"
                   className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                 />
@@ -150,7 +150,7 @@ const ArakuProject = () => {
 
               <div className="relative h-72 bg-leaf/10 border-2 border-leaf/20 overflow-hidden group/img">
                 <img
-                  src="/images/gallery/araku-fest-8.jpg"
+                  src="/images/gallery/araku-fest-8.webp"
                   alt="Araku Festival - Community engagement"
                   className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                 />

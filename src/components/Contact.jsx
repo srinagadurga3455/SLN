@@ -162,18 +162,24 @@ const Contact = () => {
 
         {/* Map */}
         <div className="mt-16 max-w-5xl mx-auto">
+          <h3 className="font-display font-bold text-2xl text-leaf text-center mb-6">
+            Find Us in Kadiyam
+          </h3>
           <div className="h-96 border-4 border-leaf/20 overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.456!2d81.234567!3d16.987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDU5JzE1LjYiTiA4McKwMTQnMDQuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps?q=16.900361,81.829917&z=15&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Siva Lalitha Nursery Location"
+              title="Siva Lalitha Nursery, Veeravaram Road, Kadiyam, East Godavari, Andhra Pradesh — Location Map"
             ></iframe>
           </div>
+          <p className="text-center text-gray-600 mt-4">
+            Veeravaram Road, Kadiyam, East Godavari District, Andhra Pradesh — open daily 7 AM to 7 PM.
+          </p>
         </div>
       </div>
     </section>

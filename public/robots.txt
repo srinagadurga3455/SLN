@@ -1,10 +1,15 @@
-# Allow all search engines and AI bots
+# robots.txt for sivalalithanursery.in
+# Sitemap: https://sivalalithanursery.in/sitemap.xml
+
+# Allow Google
 User-agent: Googlebot
 Allow: /
 
+# Allow Bing
 User-agent: Bingbot
 Allow: /
 
+# Allow AI search & answer engines
 User-agent: GPTBot
 Allow: /
 
@@ -20,6 +25,7 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+# Allow other crawlers
 User-agent: msnbot
 Allow: /
 
@@ -29,9 +35,10 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# Allow all other bots
+# Default rule — allow everything except admin/dev paths
 User-agent: *
 Allow: /
+Disallow: /assets/*.map
 
-# Sitemap
+# Sitemap location
 Sitemap: https://sivalalithanursery.in/sitemap.xml

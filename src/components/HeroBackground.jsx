@@ -2,13 +2,13 @@ import React, { useEffect, useRef, useState } from 'react'
 
 /**
  * HeroBackground Component
- * 
+ *
  * Displays either a video or image background with cinematic effect.
  * - Video: muted, autoplay, loop with pause when out of view
- * - Image: Ken Burns effect (slow zoom/pan)
+ * - Image: Ken Burns effect (slow zoom/pan) using a real <img> for LCP
  * - Respects prefers-reduced-motion
  * - Dark green gradient overlay for text readability
- * 
+ *
  * Props:
  * - videoSrc: path to video file (optional)
  * - imageSrc: path to fallback/main image (required)
@@ -21,7 +21,6 @@ const HeroBackground = ({ videoSrc = null, imageSrc, imageAlt = 'Nursery backgro
   const [reducedMotion, setReducedMotion] = useState(false)
 
   useEffect(() => {
-    // Check for reduced motion preference
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
     setReducedMotion(mediaQuery.matches)
 
@@ -32,7 +31,6 @@ const HeroBackground = ({ videoSrc = null, imageSrc, imageAlt = 'Nursery backgro
   }, [])
 
   useEffect(() => {
-    // Only use video if provided and not on mobile (save bandwidth)
     if (videoSrc && window.innerWidth > 768 && !reducedMotion) {
       setUseVideo(true)
     }
@@ -47,7 +45,6 @@ const HeroBackground = ({ videoSrc = null, imageSrc, imageAlt = 'Nursery backgro
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             video.play().catch(() => {
-              // Autoplay failed, fall back to image
               setUseVideo(false)
             })
           } else {
@@ -66,7 +63,7 @@ const HeroBackground = ({ videoSrc = null, imageSrc, imageAlt = 'Nursery backgro
   }, [useVideo])
 
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
       {/* Video Background (if available and conditions met) */}
       {useVideo && videoSrc && (
         <video
@@ -83,13 +80,16 @@ const HeroBackground = ({ videoSrc = null, imageSrc, imageAlt = 'Nursery backgro
 
       {/* Image Background with Ken Burns Effect */}
       {(!useVideo || !videoSrc) && (
-        <div
-          className={`absolute inset-0 w-full h-full bg-cover bg-center ${
+        <img
+          src={imageSrc}
+          alt={imageAlt}
+          width="2532"
+          height="1300"
+          fetchPriority="high"
+          className={`absolute inset-0 w-full h-full object-cover ${
             reducedMotion ? '' : 'animate-ken-burns'
           }`}
-          style={{
-            backgroundImage: `url("${imageSrc}")`,
-          }}
+          decoding="async"
         />
       )}
 
