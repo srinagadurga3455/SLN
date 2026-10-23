@@ -237,6 +237,71 @@ const OurWork = () => {
         'Developed garden areas with aesthetic plant arrangements',
         'Contributed to environmental beautification and green development'
       ]
+    },
+    {
+      id: 'moinabad-project',
+      title: 'Moinabad Project',
+      subtitle: 'Large-Scale Plantation & Greenery Development near Hyderabad',
+      description: 'Siva Lalitha Nursery undertook a complete plantation development project in Moinabad, Rangareddy district near Hyderabad. The project transformed an open plot into a green plantation with mango and palm trees using machinery and a dedicated workforce.',
+      fullDescription: 'This farm development project in Moinabad showcased our end-to-end execution capabilities. Our team prepared the site, marked the layout, and dug pits using JCB machinery. We then transported hundreds of quality saplings from our nursery by tractor-trolley and planted them in systematic rows — mango saplings across the plot and palms along the compound wall — ensuring proper spacing for healthy, uniform growth.',
+      category: 'Farm Development',
+      stats: [
+        { value: '100+', label: 'Saplings Planted', sublabel: 'Mango, palms & avenue species' },
+        { value: 'Multi-Acre', label: 'Site Developed', sublabel: 'Open plot to plantation' },
+        { value: '10+', label: 'Team Members', sublabel: 'With JCB & tractor support' }
+      ],
+      mainPhotos: [
+        {
+          src: '/images/moinabad-project/moinabad-05.jpeg',
+          alt: 'Moinabad Project - JCB pit digging and site preparation with crew and mango saplings',
+          caption: 'Site Preparation & Pit Digging',
+          description: 'Layout marked and pits dug with JCB machinery while our crew staged quality bagged mango saplings for planting.'
+        },
+        {
+          src: '/images/moinabad-project/moinabad-10.jpeg',
+          alt: 'Moinabad Project - Worker planting a mango sapling in a prepared pit',
+          caption: 'Planting the Saplings',
+          description: 'One of our team members planting a mango sapling in a freshly prepared pit, supported and spaced for healthy growth.'
+        },
+        {
+          src: '/images/moinabad-project/moinabad-24.jpeg',
+          alt: 'Moinabad Project - Planted rows of mango trees and palms along the compound wall',
+          caption: 'Plantation Taking Shape',
+          description: 'Planted rows of mango trees across the plot with palms lined along the compound wall — greenery established in systematic rows.'
+        }
+      ],
+      additionalPhotos: [
+        { src: '/images/moinabad-project/moinabad-01.jpeg', alt: 'Moinabad Project - Cleared and prepared site before plantation', caption: 'Site Cleared' },
+        { src: '/images/moinabad-project/moinabad-02.jpeg', alt: 'Moinabad Project - Plantation work in progress', caption: 'Plantation Work' },
+        { src: '/images/moinabad-project/moinabad-03.jpeg', alt: 'Moinabad Project - Greenery development work', caption: 'Project Work' },
+        { src: '/images/moinabad-project/moinabad-04.jpeg', alt: 'Moinabad Project - Pit digging work', caption: 'Pit Digging' },
+        { src: '/images/moinabad-project/moinabad-06.jpeg', alt: 'Moinabad Project - Layout marking with rope lines and JCB', caption: 'Layout Marking' },
+        { src: '/images/moinabad-project/moinabad-07.jpeg', alt: 'Moinabad Project - Plantation progress view', caption: 'Project Progress' },
+        { src: '/images/moinabad-project/moinabad-08.jpeg', alt: 'Moinabad Project - Tractor-trolley transporting bagged saplings to site', caption: 'Sapling Transport' },
+        { src: '/images/moinabad-project/moinabad-09.jpeg', alt: 'Moinabad Project - Sapling supply work', caption: 'Sapling Supply' },
+        { src: '/images/moinabad-project/moinabad-11.jpeg', alt: 'Moinabad Project - Planting work in progress', caption: 'Planting Work' },
+        { src: '/images/moinabad-project/moinabad-12.jpeg', alt: 'Moinabad Project - Greenery development view', caption: 'Greenery Development' },
+        { src: '/images/moinabad-project/moinabad-13.jpeg', alt: 'Moinabad Project - JCB unloading young saplings at the site', caption: 'Machine Unloading' },
+        { src: '/images/moinabad-project/moinabad-14.jpeg', alt: 'Moinabad Project - Plantation development view', caption: 'Development Work' },
+        { src: '/images/moinabad-project/moinabad-15.jpeg', alt: 'Moinabad Project - Prepared plot ready for plantation', caption: 'Plot Prepared' },
+        { src: '/images/moinabad-project/moinabad-16.jpeg', alt: 'Moinabad Project - Project site view', caption: 'Project Site View' },
+        { src: '/images/moinabad-project/moinabad-17.jpeg', alt: 'Moinabad Project - Nursery saplings at work site', caption: 'Nursery Saplings' },
+        { src: '/images/moinabad-project/moinabad-18.jpeg', alt: 'Moinabad Project - Palm saplings transported in bags for planting', caption: 'Palm Transport' },
+        { src: '/images/moinabad-project/moinabad-19.jpeg', alt: 'Moinabad Project - Plantation row work', caption: 'Plantation Rows' },
+        { src: '/images/moinabad-project/moinabad-20.jpeg', alt: 'Moinabad Project - Tree plantation progress', caption: 'Plantation Progress' },
+        { src: '/images/moinabad-project/moinabad-21.jpeg', alt: 'Moinabad Project - Tractor-trolley carrying sapling bags across the site', caption: 'Sapling Hauling' },
+        { src: '/images/moinabad-project/moinabad-22.jpeg', alt: 'Moinabad Project - Site layout marked with lines before digging', caption: 'Site Layout Marking' },
+        { src: '/images/moinabad-project/moinabad-23.jpeg', alt: 'Moinabad Project - Plantation development in progress', caption: 'Work in Progress' },
+        { src: '/images/moinabad-project/moinabad-25.jpeg', alt: 'Moinabad Project - Final plantation site view', caption: 'Final Site View' },
+        { src: '/images/moinabad-project/moinabad-26.jpeg', alt: 'Moinabad Project - JCB machine unloading saplings among planted rows', caption: 'Machine-Assisted Planting' }
+      ],
+      contributions: [
+        'Prepared the site with clearing, layout marking, and mechanized pit digging',
+        'Supplied quality mango, palm, and avenue saplings from our Kadiyam nursery',
+        'Provided tractor-trolley sapling transport and machine-assisted planting across the site',
+        'Planted in systematic rows with proper spacing for healthy, uniform growth',
+        'Delivered maintenance and after-care guidance to ensure strong establishment of the plantation'
+      ]
     }
   ]
 
