@@ -12,7 +12,7 @@ export const siteConfig = {
     { tel: '+919705368999', display: '97053 68999' },
     { tel: '+919704769888', display: '97047 69888' },
   ],
-  whatsapp: 'https://wa.me/919502835577',
+  whatsapp: 'https://wa.me/917330873455',
   email: 'nagu.kamireddy999@gmail.com',
   owner: 'Kamireddy Nagu',
   address: {

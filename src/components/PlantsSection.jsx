@@ -193,7 +193,7 @@ const PlantsSection = () => {
               Call: 95028 35577
             </a>
             <a
-              href="https://wa.me/919502835577?text=Hi%2C%20I%27m%20looking%20for%20plants"
+              href="https://wa.me/917330873455?text=Hi%2C%20I%27m%20looking%20for%20plants"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-leaf px-8 py-4 font-bold transition-colors inline-flex items-center justify-center gap-2"

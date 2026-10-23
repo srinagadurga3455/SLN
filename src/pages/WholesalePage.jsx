@@ -84,7 +84,7 @@ const WholesalePage = () => {
                 Call: 95028 35577
               </a>
               <a
-                href="https://wa.me/919502835577?text=Hi%2C%20I%27m%20interested%20in%20wholesale%20plant%20supply"
+                href="https://wa.me/917330873455?text=Hi%2C%20I%27m%20interested%20in%20wholesale%20plant%20supply"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-leaf hover:bg-leaf-dark text-white px-8 py-4 font-bold transition-colors inline-flex items-center justify-center gap-2"

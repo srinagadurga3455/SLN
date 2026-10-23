@@ -57,7 +57,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="https://wa.me/919502835577?text=Hi%2C%20I%27m%20interested%20in%20plants"
+              href="https://wa.me/917330873455?text=Hi%2C%20I%27m%20interested%20in%20plants"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-leaf px-8 py-4 font-bold text-lg transition-colors inline-flex items-center justify-center gap-3 shadow-lg"
